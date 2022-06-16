@@ -1,0 +1,11 @@
+Model Information:
+* title:	Target
+* source:	https://sketchfab.com/3d-models/target-261daa44d8c044bbb7e0b4c7db5cb937
+* author:	marti3D (https://sketchfab.com/marti3d)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Target" (https://sketchfab.com/3d-models/target-261daa44d8c044bbb7e0b4c7db5cb937) by marti3D (https://sketchfab.com/marti3d) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
