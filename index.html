@@ -7,93 +7,97 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>3D Portfolio</title>
-  <script type="module" crossorigin src="/assets/index.4cf6510e.js"></script>
+<script type="module" crossorigin src="/assets/index.c1ff33db.js"></script>
   <link rel="modulepreload" href="/assets/vendor.6031a7ef.js">
-  <link rel="stylesheet" href="/assets/index.78b8ffc5.css">
+  <link rel="stylesheet" href="/assets/index.d73927b2.css">
 </head>
 
 <body>
   <canvas id="bg"></canvas>
   <main>
+    <a id="eng" href="javascript: changeEng()"><img src="/assets/americandia.e26d9b65.png" /></a>
+    <a id="pl" href="javascript: changePl()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAzAQMAAABbpz9YAAAESHpUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHja7VdbkuQoDPznFHsEJBASx8E8IvYGc/xNsOvZtZ52zPxMxJi2cWFZEplKTLv+49/h/sHBTNFFUUs5JY8j5pi54Mb8fuR1JR/XdR0pHs/oddyFcDxgDM3747eWw75gXB4v3GLQ9jru7HjCdjiiu+N1hBl53rfnJDHO+zgdGbrcj5Sz6XOq2+Go3qZijzPe09q7+du9DChQaoJAgbkHCn5d455BmCeHgt5wpSCwoxBwLwEYze42VwDyMr1b7/0zQC8g3+7cO/rGn8HncliENyzTgRFuPj4geRsP9/j8HDjcM+LXB7r+3qZznGM0G6PvsysxAdF0VNQCm25uYLgB8rBeS2iKU3Cvq2U088VXUN589RtapUwMVoajSI0KDeqrr1SRYuTOip65clhjFpQz1zB5irPRYA05NDDIoXJHZWOY77nQiptXvEqGyI1gygRntOj/n+bOHl5pbow6IaIJpvHCCnnxLAKkMZmbV1iBEBoHb7IAvrWDfv9UWChVMCgLZsMEi992F5vQo7bC4jnATtDvEiKn7XAAiBBbkAwFMOATNECJvDIrEXA0EFSQOYfIGxggEW5IkmMIiZ0yJoTYeEdp2bJw4jmMtQlESEhBwU0OBWTFKKgfjYYaKtBWFJEkKuYkS0khxSQpJU1zkSsaNKpoUlXTrMWCRRNLpmaWrWTOAWug5JQ1W865FHYFgQp8FdgXjGy8hS1usqVNN9vyVirKp8YqNVWtVnMtjVtoWCZaatqs5VY6uY6VoscuPXXt1nMvA7U2wohDRho6bORR7qwdrH5pF1ijgzVeTE07vbOGUad6c0FzOZHJGRjjSGBcJwMoaJ6ceaMYeTI3OfOZIQphJCmTG9doMgYKYyeWQXfuHsx9izcn9i3e+GfMuUnd72DOgbqvvH1grc3vXF2M7SqcmPoA9cGmsDmc3uPyq/1fR3+so9B1DFQEijx0bmNArDp63KJMzWIZHNidaJVtWkVKGM3J1i/LpQv8OZQiilxRgNsohvV1dG0RjiFG+IJOpvndz/KCytz9wAvsKcVhboa2mUXGArxewlpdi1DUELfN4DX4PMdDx1szB49Cx/ZmOrpNAevR8yzmtmrN4ySDNY+Qi7QKz2QRKQyh4fBZQ/aZ2u6Iax7z3eanG5aCj3DnZC/RvwTH5xy7WqqNe6chcKOjAqn5uHveRjUo+ADhjgH2kTsK2AXA/gjt3mNvWK7YFgH+DX3/jP87i+6JxnAS+xP+O/oLe4C9w/9rNTSxdw/wEX/CP+F74H9Hf260d2c7CkBxcXBLwX3NARR8ZuAJf7h5RSG7Rxk+UfA5/gkPJO6KDM5U4K7I4EwF7ooMzlTgrsjgTAXuigzOVOCuyOBMBe6KDM5U4K7I4EwF7ooMzlTgPstgfR0KoDJMVub/rT/r3XcN/zr6gxyh6LDR/A+7rkRpuF1vAQAAAYRpQ0NQSUNDIHByb2ZpbGUAAHicfZE9SMNAHMVfU6VFKx3sIOKQoTpZKFrEUapYBAulrdCqg8mlX9CkIUlxcRRcCw5+LFYdXJx1dXAVBMEPEEcnJ0UXKfF/TaFFjAfH/Xh373H3DhCaVaaafVFA1SwjnYiLufyq6HuFH0EMIoqYxEw9mVnMwnV83cPD17sIz3I/9+cYUgomAzwi8RzTDYt4g3hm09I57xOHWFlSiM+JJw26IPEj12WH3ziX2izwzJCRTc8Th4jFUg/LPczKhkocIw4rqkb5Qs5hhfMWZ7VaZ5178hcGCtpKhus0x5DAEpJIQYSMOiqowkKEVo0UE2naj7v4R9v+FLlkclXAyLGAGlRIbT/4H/zu1ixOTzlJgTjQ/2LbH+OAbxdoNWz7+9i2WyeA9xm40rr+WhOY/SS90dXCR0BwG7i47mryHnC5A4w86ZIhtSUvTaFYBN7P6JvywPAtMLDm9NbZx+kDkKWulm+Ag0NgokTZ6y7v9vf29u+ZTn8/3dJy0rWDMNEAAAAGUExURf///9wUPNCQtPgAAAABYktHRACIBR1IAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5ggPCzI3PUIXNwAAABVJREFUKM9jYBgFdAP/kcCHUR51eQBk9EJUqLyokAAAAABJRU5ErkJggg==" /></a>
     <header>
       <h1>Michał Jemiołek</h1>
     </header>
     <blockquote>
-      <p>Jestem analitycznym introwertykiem i dążę w życiu do osiągnięcia swoich celów.</p>
+      <p id="one">Jestem analitycznym introwertykiem i dążę w życiu do osiągnięcia swoich celów.</p>
     </blockquote>
     <section>
-      <h2>📜 O Mnie</h2>
-      <p>
+      <h2 id="two">📜 O Mnie</h2>
+      <p id="three">
         Opisałbym się jako osobę wytrwałą, pracowitą i lubiącą wyzwania. Jestem osobą nastawioną na rezulat, co oznacza
         że nie boję się próbować nowych rzeczy, popełniać błędów i wyciągać wnioski aby w rezultacie osiągnąć wyznaczony
         cel.
       </p>
-      <p>
+      <p id="four">
         Każdą dziedziną życiową widzę jako grę lub sport który wymaga treningu i w zależności od motywacji, dyscypliny i
         włożonego wysiłku osiągamy pewne rezultaty. Wierzę w siebie i oczekuję od siebie ciągłej poprawy swoich
         umiejętności i zdobywania coraz większego doświadczenia. Jestem młody i szybko się uczę oraz potrafię się
         przystosować do wymagań stawianych przede mną. Zależy mi na rozwoju zarówno w życiu prywatnym jak i zawodowym.
-        Moje wartości w życiu to: logika, racjonalizm, opanowanie, bogactwo, dążenie do mistrzostwa.
+        Moje wartości w życiu to: logika, racjonalizm, stoicyzm, majątek, dążenie do mistrzostwa.
       </p>
-      <p>
+      <p id="five">
         Jeśli mnie zatrudnisz otrzymasz osobę która chce się rozwijać i podchodzi do tego z
         pasją, która jest nastawiona na rezultat i zależy jej na jak największej efektywności swojej pracy.
       </p>
     </section>
     <section class="light">
-      <h2>🎯 Umiejętności:</h2>
-      <p>
-        Umiejętności twarde: HTML, CSS, Javascript, React, Git, C/C++, OpenGL, Podstawy grafiki komputerowej (Gimp, 3ds
-        max), znajomość pakietu MS Office, znajomość języka angielskiego (C1), prawo jazdy kat. B.
+      <h2 id="six">🎯 Umiejętności:</h2>
+      <p id="sixAndHalf">
+        Umiejętności twarde: React, Javascript, Git, HTML, CSS, C/C++, OpenGL, Podstawy grafiki komputerowej (Gimp, 3ds
+        max), znajomość pakietu MS Office, znajomość języka angielskiego (B2), prawo jazdy kat. B.
       </p>
-      <p>
+      <p id="seven">
         Umiejętności miękkie: Praca w zespole, odporność na stres, cierpliwość, elastyczność, zarządzanie czasem,
-        analityczne myślenie, dyscyplina, pozytywne nastawienie wobec innych.
+        analityczne myślenie.
       </p>
-      <p>
+      <p id="eight">
         Zachęcam do odwiedzenia mojego konta github i codepen:
       </p>
       <a id="profile-link" href="https://github.com/mjemiolek" target="_blank" class="btn contact-details"><i
           class="fa fa-github"></i></a>
       <a id="profile-link2" href="https://codepen.io/B33M0S/pens/" target="_blank" class="btn contact-details"><i
           class="fa fa-brands fa-codepen"></i></a>
-      <h2>🏆 Mój plan rozwoju:</h2>
-      <p>
+      <h2 id="nine">🏆 Mój plan rozwoju:</h2>
+      <p id="ten">
         Obecnie zależy mi na znalezieniu pierwszej pracy w charakterze front-end developera oraz rozwijaniu swoich
         umiejętności w technologiach front-endowych z naciskiem na HTML, CSS, JavaScript, ReactJs i redux oraz node.js.
       </p>
-      <p>
+      <p id="eleven">
         Następnie będę dalej się rozwijał w technologiach front-end ale z większym naciskiem na framework Reacta.
       </p>
-      <p>
+      <p id="twelve">
         Kolejnym moim krokiem będzie jak najlepsze opanowanie backendu oraz pisania aplikacji mobilnych z wykorzystaniem
         React Native.
       </p>
     </section>
     <blockquote>
-      <p>Najważniejszym i największym triumfem człowieka jest zwycięstwo nad samym sobą.
+      <p id="thirteen">Najważniejszym i największym triumfem człowieka jest zwycięstwo nad samym sobą.
         Bycie pokonanym przez samego siebie jest ze wszystkich rzeczy najbardziej haniebne i niegodziwe. [Platon]</p>
     </blockquote>
     <section class="left">
-      <h2>💡 Zainteresowania</h2>
-      <p>
+      <h2 id="fourteen">💡 Zainteresowania</h2>
+      <p id="fourteenAndHalf">
         Oprócz interesowania się programowaniem i technologią w wolnym czasie lubię przerzucać żelastwo na siłowni. Moje
-        cele na ten rok to 140kg na ławce płaskiej, 150kg w przysiadzie i 200kg w martwym ciągu.
+        cele na te rok to 140kg na ławce płaskiej, 150kg w przysiadzie i 200kg w martwym ciągu.
       </p>
-      <p>
+      <p id="fifteen">
         Interesuje się także grami komputerowymi. Jestem studentem 3 roku informatyki stosowanej na Politechnice
-        Łódzkiej na specjalności technologie gier i symulacji komputerowych. Oprócz interesowania się gameDevem i ogrywaniem
-        RPGów FPSów czy RTSów zawsze chętnie zagram partię szachów.
+        Łódzkiej na specjalności technologie gier i symulacji komputerowych. Oprócz tworzenia gier i ogrywania RPGów
+        FPSów czy RTSów zawsze chętnie zagram partię szachów.
       </p>
-      <p>
+      <p id="sixteen">
         Poza tym interesuję się rozwojem osobistym. Lubię sobie stawiać wyzwania i dążyć do ich wykonania. Jeśli mam na
-        to czas to szukam informacji lub czytam książki z zakresu finansów, umiejętności społecznych, samorozwoju.
+        to czas to szukam informacji lub czytam książki z zakresu finansów, umiejętności społecznych, stoicyzmu.
       </p>
-      <p>
+      <p id="seventeen">
         Poza wymienionymi lubię motoryzację,(szczególnie stare BMW) jazdę na snowboardzie oraz grę na keyboardzie.
       </p>
     </section>
   </main>
+  
+  <script src="/language.js"></script>
 </body>
 
 </html>
