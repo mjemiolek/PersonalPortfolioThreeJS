@@ -10,6 +10,27 @@ body {
   display: block;
 }
 
+#eng {
+  position: fixed;
+  right: 65px;
+
+}
+
+#eng>img {
+  width: 40px;
+  height: 25px;
+}
+
+#pl {
+  position: fixed;
+  right: 120px;
+}
+
+#pl>img {
+  width: 40px;
+  height: 25px;
+}
+
 
 canvas {
   position: fixed;
